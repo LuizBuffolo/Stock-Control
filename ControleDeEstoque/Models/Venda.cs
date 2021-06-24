@@ -1,4 +1,5 @@
 ﻿using ControleDeEstoque.Models.Interface;
+using LiteDB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,13 @@ namespace ControleDeEstoque.Models
 {
     public class Venda : IModel
     {
-        public int Id { get; set; }
+        [BsonId]
+        public ObjectId Id { get; set; }
+
+        [BsonField]
+        public Cliente Client { get; set; }
+
+        [BsonField]
+        public List<Peca> Pecas { get; set; }
     }
 }
