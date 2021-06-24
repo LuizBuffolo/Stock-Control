@@ -67,6 +67,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Constants.cs" />
     <Compile Include="DataBase\ClienteDataBaseManager.cs" />
     <Compile Include="DataBase\Interface\IClienteDataBaseManager.cs" />
     <Compile Include="DataBase\Interface\IDataBase.cs" />

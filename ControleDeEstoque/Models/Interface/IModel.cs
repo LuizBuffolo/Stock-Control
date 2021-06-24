@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LiteDB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace ControleDeEstoque.Models.Interface
 {
     public interface IModel
     {
-        int Id { get; set; }
+        ObjectId Id { get; set; }
     }
 }
 

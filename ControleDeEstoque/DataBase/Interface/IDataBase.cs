@@ -1,4 +1,5 @@
 ﻿using ControleDeEstoque.Models.Interface;
+using LiteDB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,9 @@ namespace ControleDeEstoque.DataBase.Interface
 
         bool Update(T item);
 
-        bool Delete(int Id);
+        bool Delete(T item);
 
-        T GetItemById(int Id);
+        T GetItemById(T item);
 
         List<T> GetAll();
     }
